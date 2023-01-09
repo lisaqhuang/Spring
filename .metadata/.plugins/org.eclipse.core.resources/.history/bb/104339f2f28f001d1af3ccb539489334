@@ -1,0 +1,15 @@
+package tw.ispan.model;
+
+public class CreditCardGoGo implements CreditCard {
+
+	public CreditCardGoGo() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void useCard(String messages) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="teacher1" class="tw.ispan.model.EnglishTeacher"></bean>
+    
+    
+    <!-- String stinrg0 = new String("Test Information") -->
+    <bean id="string0" name="string1,string2" class="java.lang.String">
+       <constructor-arg value="Test Information"></constructor-arg>
+    </bean>
+    
+    <bean id="loginDao" class="tw.ispan.model.LoginDao"></bean>
+    
+    <!-- 建構子注入 constructor injection -->
+    <bean id="loginService" class="tw.ispan.service.LoginService">
+       <constructor-arg ref="loginDao"></constructor-arg>
+    </bean>
+    
+    
+</beans>

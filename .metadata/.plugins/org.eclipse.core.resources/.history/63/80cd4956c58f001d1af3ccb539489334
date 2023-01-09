@@ -1,0 +1,11 @@
+package tw.ispan.model;
+
+public class EnglishTeacher implements Teacher {
+
+	@Override
+	public void teach(String context) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

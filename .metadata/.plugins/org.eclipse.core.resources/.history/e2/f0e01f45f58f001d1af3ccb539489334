@@ -1,0 +1,15 @@
+package tw.ispan.model;
+
+public class CreditCardHappy implements CreditCard {
+
+	public CreditCardHappy() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void useCard(String messages) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

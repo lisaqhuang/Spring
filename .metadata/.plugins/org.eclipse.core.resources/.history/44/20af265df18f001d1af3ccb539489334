@@ -1,0 +1,9 @@
+package tw.ispan.model;
+
+public class Strudent {
+
+	public Strudent() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,55 @@
+package tw.ispan.model;
+
+import java.util.Date;
+
+public class Car {
+
+	
+	private Integer id;
+	private String carname;
+	private String brand;
+	private Date releaseDate;
+	
+	public Car() {
+	}
+	
+	public Car(Integer id, String carname, String brand) {
+		super();
+		this.id = id;
+		this.carname = carname;
+		this.brand = brand;
+	}
+		
+
+	public Car(Date releaseDate) {
+		super();
+		this.releaseDate = releaseDate;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getCarname() {
+		return carname;
+	}
+
+	public void setCarname(String carname) {
+		this.carname = carname;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	
+
+}

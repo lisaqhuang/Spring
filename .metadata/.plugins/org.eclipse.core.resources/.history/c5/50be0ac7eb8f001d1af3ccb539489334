@@ -1,0 +1,9 @@
+package tw.ispan.model;
+
+public class BookBeanFactory {
+
+	public BookBeanFactory() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

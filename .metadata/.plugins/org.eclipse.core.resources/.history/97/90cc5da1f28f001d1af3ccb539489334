@@ -1,0 +1,5 @@
+package tw.ispan.model;
+
+public interface CreditCard {
+
+}

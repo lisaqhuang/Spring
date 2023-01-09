@@ -1,0 +1,9 @@
+package tw.ispan.model;
+
+public class LightBean {
+
+	public LightBean() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

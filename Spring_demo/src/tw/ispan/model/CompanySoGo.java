@@ -1,0 +1,21 @@
+package tw.ispan.model;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class CompanySoGo {
+
+	@Autowired
+	@Qualifier("creditCardHappy")//指定用creditcardhappy
+	private CreditCard creditcard;
+	
+	
+	public CompanySoGo() {
+	}
+
+	public void useCard() {
+		creditcard.useCard("來sogo 刷卡送雨傘");
+	}
+}

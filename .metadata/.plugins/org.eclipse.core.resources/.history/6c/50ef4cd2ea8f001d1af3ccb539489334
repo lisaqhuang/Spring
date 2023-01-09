@@ -1,0 +1,22 @@
+package tw.ispan.action;
+
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import tw.ispan.model.Book;
+
+public class Demo5BookStaticFactoryAction {
+
+	public static void main(String[] args) {
+		
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		
+		Book book1 = context.getBean("javaBook",Book.class);
+		System.out.println("book name:"+ book1.getBookName());
+		
+		Book book2 = context.getBean("mathBook",Book.class);
+		System.out.println("book2 name:"+ book2.getBookName());
+
+	}
+
+}

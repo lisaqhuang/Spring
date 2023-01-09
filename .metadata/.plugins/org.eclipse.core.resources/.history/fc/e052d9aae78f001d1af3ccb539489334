@@ -1,0 +1,32 @@
+package tw.ispan.action;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import tw.ispan.model.Car;
+
+public class Demo4CarAction {
+
+	public static void main(String[] args) {
+		
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.Xml");
+		
+		//用index方式獲取
+//		Car car = context.getBean("car1",Car.class);
+//		System.out.println("name:"+ car.getCarname());
+//		System.out.println("brand:"+ car.getBrand());
+		
+		//用type方式獲取
+//		Car car2 = context.getBean("car2",Car.class);
+//		System.out.println("realeaseDate"+car2.getReleaseDate());
+		
+		//用p name方式獲取
+		Car car3 = context.getBean("car3",Car.class);
+		System.out.println("id:"+ car3.getId());
+		System.out.println("name:"+ car3.getCarname());
+		System.out.println("brand:"+ car3.getBrand());
+		
+		context.close();
+
+	}
+
+}

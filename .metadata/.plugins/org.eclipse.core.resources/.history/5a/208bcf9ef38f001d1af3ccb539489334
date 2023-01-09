@@ -1,0 +1,9 @@
+package tw.ispan.model;
+
+public class CompanySoGo {
+
+	public CompanySoGo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
