@@ -1,21 +1,27 @@
 package tw.ispan.model;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component("light")
+@PropertySource("classpath:light.properties")
 public class LightBean {
 
-	@Value("#{props.id}")
+//	@Value("#{props.id}")
+	@Value("${id}")
 	private Integer id;
 	
-	@Value("#{props.red}")
+//	@Value("#{props.red}")
+	@Value("${red}")
 	private Integer red;
 	
-	@Value("#{props.green}")
+//	@Value("#{props.green}")
+	@Value("${green}")
 	private Integer green;
 	
-	@Value("#{props.yellow}")
+//	@Value("#{props.yellow}")
+	@Value("${yellow}")
 	private Integer yellow;
 	
 	public LightBean() {

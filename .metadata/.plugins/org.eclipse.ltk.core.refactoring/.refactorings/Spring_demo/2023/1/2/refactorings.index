@@ -21,3 +21,9 @@
 1673251364967	Extract local variable 'sogo'
 1673253073347	Extract local variable 'context'
 1673253127496	Extract local variable 'light1'
+1673314719928	Extract local variable 'context'
+1673314756665	Extract local variable 'phone'
+1673316233874	Extract local variable 'context'
+1673316268191	Extract local variable 'emp'
+1673321677269	Extract local variable 'ob'
+1673329615272	Copy file

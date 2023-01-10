@@ -14,7 +14,7 @@ public class Demo9PropertiesFileAction {
 		System.out.println("red:"+ light1.getRed());
 		System.out.println("green:"+ light1.getGreen());
 		System.out.println("yellow:"+ light1.getYellow());
-		
+		context.close();
 	}
 
 }
