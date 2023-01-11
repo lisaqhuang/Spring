@@ -29,8 +29,8 @@ public class AppConfig {
 		return txManager;
 		
 	}
-	
-	
+
+	@Bean
 	public Properties hibernateProperties() {
 		//對應hibernate.cfg.xml資料
 		Properties properties = new Properties();
